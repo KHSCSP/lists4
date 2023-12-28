@@ -3,7 +3,7 @@
 
 
 print("\n--- loading the 10,000 most common passwords ---")
-f = open('lists4/passwords.txt', "r")
+f = open('u11lists4/passwords.txt', "r")
 passwords = []
 for line in f:
   line = line.strip() # this will remove 'newlines'
