@@ -3,7 +3,7 @@
 
 
 print("\n--- loading the 10,000 most common passwords ---")
-f = open('passwords.txt', "r")
+f = open('lists4/passwords.txt', "r")
 passwords = []
 for line in f:
   line = line.strip() # this will remove 'newlines'
@@ -40,7 +40,7 @@ print("here's each letter and its frequency:", counts)
 print("\n--- search for an item ---")
 choice = 'banana'
 while choice[0] != 'q':
-  choice = input("\nWhat to look for? ").lower()
+  choice = input("\nWhat to look for? q to quit:").lower()
   if choice in passwords:
     place = passwords.index(choice)
     print("found that at position", place)
