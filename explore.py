@@ -6,8 +6,8 @@ print("\n--- loading the 10,000 most common passwords ---")
 f = open('u11lists4/passwords.txt', "r")
 passwords = []
 for line in f:
-  line = line.strip() # this will remove 'newlines'
-  passwords.append(line)
+    line = line.strip() # this will remove 'newlines'
+    passwords.append(line)
 f.close()
 
 
@@ -24,13 +24,13 @@ print("\n--- analyzing the data ---")
 s = ''
 # convert to one long string
 for item in passwords:
-  s += item.lower()
+    s += item.lower()
 
 # create a list of each letter and its frequency
 chars = 'abcdefghijklmnopqrstuvwxyz1234567890'
 counts = []
 for c in chars:
-  counts.append([c, s.count(c)])
+    counts.append([c, s.count(c)])
 
 print("here's each letter and its frequency:", counts)
 
@@ -40,12 +40,12 @@ print("here's each letter and its frequency:", counts)
 print("\n--- search for an item ---")
 choice = 'banana'
 while choice[0] != 'q':
-  choice = input("\nWhat to look for? q to quit:").lower()
-  if choice in passwords:
-    place = passwords.index(choice)
-    print("found that at position", place)
-  else:
-    print("that is not in the 10000 most common passwords")
+    choice = input("\nWhat to look for? q to quit:").lower()
+    if choice in passwords:
+        place = passwords.index(choice)
+        print("found that at position", place)
+    else:
+        print("that is not in the 10000 most common passwords")
 
 
 

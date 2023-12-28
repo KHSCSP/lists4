@@ -1,13 +1,13 @@
 
 def get_pi(filename):
-  # read in the file (into a list of strings)
-  with open(filename) as f:
-    lines = f.readlines()
-  # strip of new lines and whitespace
-  pi_string = ''
-  for line in lines:
-    pi_string += line.strip()
-  return pi_string
+    # read in the file (into a list of strings)
+    with open(filename) as f:
+        lines = f.readlines()
+    # strip of new lines and whitespace
+    pi_string = ''
+    for line in lines:
+        pi_string += line.strip()
+    return pi_string
 # -- do not edit above this line ---
 
 
@@ -30,15 +30,15 @@ print(pi_string[:50])
 
 # where is your birthday?
 if '012345' in pi_string:
-  print('found it at position', pi_string.index('012345'))
+    print('found it at position', pi_string.index('012345'))
 
 
 
 # count occurrances of each digit
 counts = [0,0,0,0,0,0,0,0,0,0]
 for letter in pi_string[2:]:
-  digit = int(letter)
-  counts[digit] += 1
+    digit = int(letter)
+    counts[digit] += 1
 
 print(counts)
 
