@@ -15,7 +15,9 @@ data = ['8', '3', '4', '5', '2', ",", '4', '0', '3', '8', '2', '1', '-3', '-5', 
 
 
 
+
 # remove any negative numbers
+
 
 
 
@@ -26,8 +28,10 @@ print("\n\n---- analyzing a list of integers ----")
 
 
 
+
 # we need to count how many times each digit appears
 # make a list of tuples where each tuple is (i, count(i))
+
 
 
 
