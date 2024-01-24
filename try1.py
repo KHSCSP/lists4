@@ -46,7 +46,6 @@ s = "Utilitatis causa amicitia est quaesita.\n Lorem ipsum dolor sit amet, conse
 
 
 # next, convert all letters to lowercase
-# this will require a new string and a loop
 
 
 
