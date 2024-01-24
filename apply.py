@@ -1,50 +1,9 @@
+f = open("u11lists4\pi_digits.txt", "r")  # open the file for reading
+pi = f.read() # read the data into one long string
+f.close() # close the file to release memory
 
-def get_pi(filename):
-    # read in the file (into a list of strings)
-    with open(filename) as f:
-        lines = f.readlines()
-    # strip of new lines and whitespace
-    pi_string = ''
-    for line in lines:
-        pi_string += line.strip()
-    return pi_string
-# -- do not edit above this line ---
-
-
-
-# the 'short' version of pi
-pi_string = get_pi('u11lists4/pi_digits.txt')
-
-# more digits!! use this later
-#pi_string = get_pi('u11lists4/pi_million_digits.txt')
-
-
-
-
-
-# fun stuff
-# how many digits do we have?
-print("there are", len(pi_string), 'digits')
-print(pi_string[:50])
-
-
-# where is your birthday?
-if '012345' in pi_string:
-    print('found it at position', pi_string.index('012345'))
-
-
-
-# count occurrances of each digit
-counts = [0,0,0,0,0,0,0,0,0,0]
-for letter in pi_string[2:]:
-    digit = int(letter)
-    counts[digit] += 1
-
-print(counts)
-
-
-
-# print the 'pi' variable
+print("\n--- part 1, working with a string ---")
+# print a slice of the 'pi' variable (maybe 30 digits)
 
 
 # what type of data do we have? (print the type of 'pi')
@@ -75,7 +34,7 @@ print(counts)
 
 
 # search for your birthday in the digits of pi. where is it located?
-
+# example: mmdd or mmddyy or mmddyyyy
 
 
 
@@ -106,5 +65,6 @@ print("\n\n---- part 2, working with a list of integers ---")
 
 
 # once your program is working, change the file to "pi_million_digits.txt" and run your code again
+
 
 
