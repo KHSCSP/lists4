@@ -16,7 +16,7 @@ def get_pi(filename):
 pi_string = get_pi('u11lists4/pi_digits.txt')
 
 # more digits!! use this later
-#pi_string = get_pi('u11/lists4/pi_million_digits.txt')
+#pi_string = get_pi('u11lists4/pi_million_digits.txt')
 
 
 
