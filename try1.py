@@ -16,7 +16,7 @@ data = ['8', '3', '4', '5', '2', ",", '4', '0', '3', '8', '2', '1', '-3', '-5', 
 
 
 
-# remove any negative numbers
+# make a list of only the positive values
 
 
 
