@@ -59,5 +59,8 @@ alpha = 'abcdefghijklmnopqrstuvwxyz'
 
 
 
+# question:
+# have the 'most common' letters changed
+# in the last 200 years?
 
 
