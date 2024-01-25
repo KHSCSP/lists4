@@ -1,4 +1,4 @@
-f = open("u11lists4\pi_digits.txt", "r")  # open the file for reading
+f = open("u11lists4/pi_digits.txt", "r")  # open the file for reading
 pi = f.read() # read the data into one long string
 f.close() # close the file to release memory
 
