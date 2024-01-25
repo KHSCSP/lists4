@@ -23,7 +23,6 @@ print("\n--- part 1, working with a string ---")
 
 # we need to count how many times each digit appears
 # make a list of tuples where each tuple is (digit, count(digit))
-# hint: loop using the range function, then you'll need to 'count(str(i))'
 
 
 
