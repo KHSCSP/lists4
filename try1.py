@@ -45,6 +45,14 @@ s = "Utilitatis causa amicitia est quaesita.\n Lorem ipsum dolor sit amet, conse
 
 
 
+# or even better
+# make a list of unwanted characters
+# iterate through that, and remove
+
+
+
+
+
 # next, convert all letters to lowercase
 
 
